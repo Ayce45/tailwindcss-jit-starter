@@ -7,7 +7,7 @@
     "build": "postcss ./tailwind.css -o ./style.css",
     "watch": "postcss ./tailwind.css -o ./style.css -w",
     "serve": "live-server --no-css-inject",
-    "dev": " npm run serve && npm run watch"
+    "dev": " npm run serve & npm run watch"
   },
   "keywords": [],
   "author": "",
