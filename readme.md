@@ -15,5 +15,6 @@ npm run build
 ### Watch and Live-server
 
 ```
-npm run dev
+npm run watch
+npm run serve
 ```
