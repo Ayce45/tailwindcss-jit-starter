@@ -1,19 +1,20 @@
 {
   "name": "tailwindcssjit-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "postcss ./tailwind.css -o ./style.css",
     "watch": "postcss ./tailwind.css -o ./style.css -w",
     "serve": "live-server --no-css-inject",
-    "dev": " npm run serve & npm run watch"
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "concurrently": "^6.2.1",
     "live-server": "^1.2.1",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.1"
